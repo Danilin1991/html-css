@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>personalisando links</title>
+        <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        a { /* cor do link sendo visitado ou nao */
+            color:red;
+            text-decoration: none;
+        }
+
+        a:visited { /* cor do link muda quando for visitado*/
+            color: deepskyblue
+        }
+
+        a:hover { /* quando passar o mouse sobre o link muda para violeta e um sublinhado*/
+            color: blueviolet;
+            text-decoration: underline;
+        }
+
+        a:active { /* link clicado muda a cor para amarelo */
+            color : yellow
+        }
+
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: deeppink;
+        }
+        </style>
+	</head>
+	<body>
+		<h1>personalisando links</h1>
+		<ul>
+			<a href="htttps://gustavoguanabara.github.io" target="_blank">
+				<li>github</li>
+			</a>
+			<a href="https://youtube.com/cursoemvideo/" target="_blank">
+					<li>youtube</li>
+				</a>
+			</a>
+			<a href="https://www.cursoemvideo.com/" target="_blank">
+                <li>curso em video</li>
+            </a>
+		</ul>
+	</body>
+</html>
